@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'protractor-typescript-cucumber';
+  count = 0;
+
+  increase() {
+    this.count++;
+  }
+
+  reset() {
+    this.count = 0;
+  }
 }
