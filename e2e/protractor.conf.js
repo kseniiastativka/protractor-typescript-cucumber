@@ -21,7 +21,8 @@ exports.config = {
   cucumberOpts: {
     require: [
       './src/step-definitions/**/*.steps.ts'
-    ]
+    ],
+    tags: '@fast'
   },
   onPrepare() {
     require('ts-node').register({
